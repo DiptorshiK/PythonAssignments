@@ -1,4 +1,13 @@
-s = input("Enter a string : ")
+s = input("Enter a string: ")
 print("The Count Of The Characters Are Listed Below !!")
+
+c={}
+
 for char in s:
-    print(f"'{char}': {s.count(char)}")
+    if char in c:
+        c[char] += 1
+    else:
+        c[char] = 1
+
+for char, count in c.items():
+    print(char,":",count)
