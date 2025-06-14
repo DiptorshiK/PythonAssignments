@@ -9,5 +9,6 @@ for char in s:
     else:
         c[char] = 1
 
-for char, count in c.items():
-    print(char,":",count)
+# for char, count in c.items():
+#     print(char,":",count)
+print(c)
